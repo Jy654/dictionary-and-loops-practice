@@ -1,3 +1,4 @@
+
 # This activity:
 #     Reinforces nested dictionaries & lists
 #     Ties directly to real school systems
@@ -42,50 +43,52 @@
 import student_data
 
 # print(student_data.students)
-# students = student_data.students # this line
-# # imports the data from the students_data.py
-# print(len(students))
+students = student_data.students # This line imports the data from the students_data.py file
+# print(len(students)) # Length of the line
 # print(students[0]['Combo,Name'])
 # print(students[0]['Email'][0])
 # print(students[0]['Email'][1])
-
-# print(students[0]['Combo,Name'])
+# print(students[0]['MName'][0])
+# print(students[0]['HR'][0])
+# print(students[0]['FName'][0])
 
 # print(students[2]['Email'][0])
 # print(students[2]['Email'][1])
+# What is being counted?
 
+# If the output is 36, what does that tell you?
 
-# student.update({'LunchStatus': 'Reduced'})
-# print(student['LunchStatus'])
-# print("_"*25
-# )
-# # What is being counted?
+# If one new student enrolls, what happens to this number?
 
-# # If the output is 36, what does that tell you?
-
-# # If one new student enrolls, what happens to this number?
-
-# # Why would a school use this in a real attendance system?
+# Why would a school use this in a real attendance system?
 
 
 
 
 
-# # for loops allow us to
-# #iterate through the data
-# #and perform some function
+# for loops allow us to
+#iterate through the data
+#and perform some function
 
-# #we are iterating through the data
-# #and printing the name and email of the students
-# #we are also printing a line of underscores to separate the students
-# #we are also printing a line of underscores to separate the students
+#we are iterating through the data
+#and printing the name and email of the students
+#we are also printing a line of underscores to separate the students
+#we are also printing a line of underscores to separate the students
 # for student in students:
 #     print(student['Combo,Name'])
-#     print(student['CPSID'])
+#     print(student['Email'][0])
+#     print(student['Email'][1])
 #     print(student['GL'])
-#     print("_"*25)
+#     print(student['HR'])
+#     print(student['CPSID'])
 
-# if student{'GL'} >
+#     student['LunchStatus'] = "Reduced"
+#     print(student['LunchStatus'])
+#     student.update({'LunchStatus': 'Reduced'})
+#     print(student{'LunchStatus'})
+# if student['GL'] >= 10:
+#     print("off campus lunch")
+# print("_"*25)
 # What does the loop variable student represent on each pass?
 
 # How many times will this loop run?
@@ -100,12 +103,16 @@ import student_data
 # we are asking the user to input their name
 # then we are checking if the name is in the data
 # if the name is in the data we are printing the name and "this works"
-name = input("what is you name?") 
+name = input("what is your name?") 
 for student in students:
     if name == student['Combo,Name']:
         print(student['Combo,Name'])
         print("this works")
-
+ID = input("What is your cps id?")
+for student in students:
+    if name == student['CPSID']:
+        print(student['CPSID'])
+        print("this works")
 # What is the goal of this search?
 
 # What happens if the name is not found?
